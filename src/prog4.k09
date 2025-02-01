@@ -1,0 +1,10 @@
+startprogram
+startblok 
+variable longint aaaaaaaaaaaaaaaa;
+ 	read aaaaaaaaaaaaaaaa
+	while aaaaaaaaaaaaaaaa >> 1
+		aaaaaaaaaaaaaaaa <== aaaaaaaaaaaaaaaa sub 1
+		write aaaaaaaaaaaaaaaa
+	end while
+endblok
+		

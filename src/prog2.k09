@@ -1,0 +1,36 @@
+##Prog2
+startprogram
+startblok
+variable longint aaaaaaaaaaaaaaaa,bbbbbbbbbbbbbbbb,cccccccccccccccc;
+read aaaaaaaaaaaaaaaa
+read bbbbbbbbbbbbbbbb
+read cccccccccccccccc
+if(aaaaaaaaaaaaaaaa >> bbbbbbbbbbbbbbbb)
+	if(aaaaaaaaaaaaaaaa >> cccccccccccccccc)
+		goto dddddddddddddddd;	
+	else
+		write cccccccccccccccc
+		goto xxxxxxxxxxxxxxxx;
+		dddddddddddddddd :		
+		write aaaaaaaaaaaaaaaa
+		goto xxxxxxxxxxxxxxxx;
+	
+if(bbbbbbbbbbbbbbbb << cccccccccccccccc)
+	write cccccccccccccccc;	
+else
+	write bbbbbbbbbbbbbbbb;
+
+xxxxxxxxxxxxxxxx :	
+if((aaaaaaaaaaaaaaaa == bbbbbbbbbbbbbbbb) & (aaaaaaaaaaaaaaaa == cccccccccccccccc) & (bbbbbbbbbbbbbbbb == cccccccccccccccc))
+	write 1	
+else
+	write 0
+if((aaaaaaaaaaaaaaaa << 0) | (bbbbbbbbbbbbbbbb << 0) | (cccccccccccccccc << 0))
+	write -1	
+else
+	write 0
+if(!(aaaaaaaaaaaaaaaa << (bbbbbbbbbbbbbbbb add cccccccccccccccc)))
+	write 10	
+else
+	write 0
+endblok

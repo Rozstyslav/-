@@ -1,0 +1,25 @@
+startprogram
+startblok
+variable longint aaaaaaaaaaaaaaaa, bbbbbbbbbbbbbbbb, cccccccccccccccc, cycleaaaaaaaaaaa, cyclebbbbbbbbbbb, cycleccccccccccc;
+	read aaaaaaaaaaaaaaaa
+	aaaaaaaaaaaaaaaa <== aaaaaaaaaaaaaaaa add 1
+	for cycleaaaaaaaaaaa <== 0 to 32767 do
+		bbbbbbbbbbbbbbbb <== aaaaaaaaaaaaaaaa sub 1
+		for cyclebbbbbbbbbbb <== 0 to 32767 do
+			if (bbbbbbbbbbbbbbbb >> 2) ; else goto endcyclebbbbbbbb; 
+			cccccccccccccccc <== aaaaaaaaaaaaaaaa
+			for cycleccccccccccc <== 0 to 32767 do
+				if ( cccccccccccccccc >> bbbbbbbbbbbbbbbb) ; else goto endcyclecccccccc;
+				cccccccccccccccc <== cccccccccccccccc sub bbbbbbbbbbbbbbbb
+			;
+			endcyclecccccccc :
+			if ( cccccccccccccccc == 0 ) goto  endcyclebbbbbbbb;
+			bbbbbbbbbbbbbbbb <== bbbbbbbbbbbbbbbb sub 1
+		;
+		endcyclebbbbbbbb :
+		if ( bbbbbbbbbbbbbbbb == 1 ) goto endcycleaaaaaaaa;
+		aaaaaaaaaaaaaaaa <== aaaaaaaaaaaaaaaa add 1
+	;
+	endcycleaaaaaaaa :
+	write aaaaaaaaaaaaaaaa
+endblok

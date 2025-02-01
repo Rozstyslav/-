@@ -1,0 +1,9 @@
+startprogram
+startblok
+variable longint aaaaaaaaaaaaaaaa;
+	read aaaaaaaaaaaaaaaa
+	repeat
+	aaaaaaaaaaaaaaaa <== aaaaaaaaaaaaaaaa sub 1
+	write aaaaaaaaaaaaaaaa
+	until  aaaaaaaaaaaaaaaa >> 1
+endblok
